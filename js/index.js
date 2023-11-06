@@ -52,6 +52,7 @@ function randomValues() {
         resultComponent.classList.add('result-component');
         numbersContainer.classList.add('numbers');
         resultComponent.classList.remove('result-component-warning', 'result-component-danger');
+        numbersContainer.classList.remove('numbers-warning', 'numbers-danger');
         stateRange.innerText = result;
         statusRandom.innerText = 'excelente';
         paragraph.innerText = 'felicidades!';
@@ -60,6 +61,7 @@ function randomValues() {
         resultComponent.classList.add('result-component-warning');
         numbersContainer.classList.add('numbers-warning');
         resultComponent.classList.remove('result-component', 'result-component-danger');
+        numbersContainer.classList.remove('numbers', 'numbers-danger');
         stateRange.innerText = result;
         statusRandom.innerText = 'normal';
         paragraph.innerText = 'Estas en el rango normal de personas';
@@ -68,6 +70,7 @@ function randomValues() {
         resultComponent.classList.add('result-component-danger');
         numbersContainer.classList.add('numbers-danger');
         resultComponent.classList.remove('result-component', 'result-component-warning');
+        numbersContainer.classList.remove('numbers', 'numbers-warning');
         stateRange.innerText = result;
         statusRandom.innerText = 'grave';
         paragraph.innerText = 'estas en el rango grave y debes revisar tus valores';
